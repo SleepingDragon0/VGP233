@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour   
 {
     [SerializeField]
-    GameObject ball, scoreText;
+    GameObject ball;
+    [SerializeField]
+    TextMeshProUGUI scoreText;
 
     int score;
 
@@ -43,10 +46,12 @@ public class GameManager : MonoBehaviour
     {
         timer += Time.deltaTime;
         if (timer >= spawnTime) { 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(ball, startPos, Quaternion.identity);
-        }
+            startPos = new Vector3(Random.Range(-2, 2), 4.42f, 0);
+
+            }
         }
     }
 
@@ -54,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         multiplier += mulIncrease;
         score += ball * multiplier;
-        scoreText.GetComponent<Text>().text = "Score: " + score;
+        scoreText.text = "Score: " + score;
     }
 
 
