@@ -8,14 +8,14 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     GameObject ball;
+
+    [SerializeField]
+    GameObject tracer;
+
     [SerializeField]
     TextMeshProUGUI scoreText;
 
     int score;
-
-
-    [SerializeField]
-    Vector3 startPos;
 
     public int multiplier;
 
@@ -24,11 +24,17 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float spawnTime;
 
+    [SerializeField]
+    private float speed;
+
     private float timer;
+
+    private Vector3 spawnerpos;
+
+
 
     private void Awake()
     {
-        startPos = new Vector3(Random.Range(-2, 2), 4.42f, 0);
         if (instance == null)
         {
             instance = this;
@@ -37,6 +43,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
 
         score = 0;
         multiplier = 1;
@@ -48,11 +55,11 @@ public class GameManager : MonoBehaviour
         if (timer >= spawnTime) { 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(ball, startPos, Quaternion.identity);
-            startPos = new Vector3(Random.Range(-2, 2), 4.42f, 0);
+            Instantiate(ball, tracer.transform.position, Quaternion.identity);
 
-            }
         }
+        }
+        
     }
 
     public void UpdateScore(int ball, int mulIncrease)
