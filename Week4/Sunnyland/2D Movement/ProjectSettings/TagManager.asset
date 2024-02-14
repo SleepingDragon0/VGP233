@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Through
+  - player
+  - player2
+  - totem
   layers:
   - Default
   - TransparentFX
