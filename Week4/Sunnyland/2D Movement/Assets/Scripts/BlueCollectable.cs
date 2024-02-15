@@ -19,7 +19,7 @@ public class BlueCollectable : MonoBehaviour
     {
         if (other.tag == "player2") 
         {
-            //Debug.Log("Touched");
+            Debug.Log("Touched");
             GameManager.instance.UpdateBlueScore();
             Destroy(gameObject);
         }

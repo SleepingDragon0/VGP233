@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
@@ -35,8 +35,13 @@ public class Player : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
+        
     {
-        Debug.Log("Restart Scene");
+        if(collision.gameObject.tag == "KillZone")
+        {
+            Debug.Log("Restart Scene");
+            RestartScene();
+        }
 
     }
 }
