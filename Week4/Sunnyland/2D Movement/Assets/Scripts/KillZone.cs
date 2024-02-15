@@ -18,7 +18,8 @@ public class KillZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
         GameManager.instance.deadRun = true;
+        Destroy(gameObject);
+
     }
 }

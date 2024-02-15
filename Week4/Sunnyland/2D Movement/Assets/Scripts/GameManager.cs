@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         if(deadRun == true)
         {
             gameOverText.gameObject.SetActive(true);
+
         }
     }
 
