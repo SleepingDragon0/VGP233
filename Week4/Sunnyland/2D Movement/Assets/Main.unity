@@ -321,6 +321,7 @@ MonoBehaviour:
   redScore: {fileID: 1589281297}
   blueScore: {fileID: 1528097663}
   gameOverText: {fileID: 164911894}
+  timer: 2
   deadRun: 0
 --- !u!4 &125025580
 Transform:
@@ -2621,7 +2622,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820667350}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: d0056c69a7fd25f439cdb7b26ed3392a, type: 2}
   m_IncludeLayers:

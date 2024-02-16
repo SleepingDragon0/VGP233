@@ -19,7 +19,7 @@ public class RedCollectable : MonoBehaviour
     {
         if (other.tag == "player") 
         {
-           //Debug.Log("Touched");
+           Debug.Log("Touched");
             GameManager.instance.UpdateRedScore();
             Destroy(gameObject);
         }

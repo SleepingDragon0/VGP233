@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -25,6 +26,9 @@ public class GameManager : MonoBehaviour
 
     int blueCollected;
     int redCollected;
+
+    [SerializeField]
+    float timer;
 
     public static GameManager instance;
 
@@ -59,8 +63,15 @@ public class GameManager : MonoBehaviour
         if(deadRun == true)
         {
             gameOverText.gameObject.SetActive(true);
+            timer = timer - 1 * Time.deltaTime;
+            if (timer <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+            }
 
         }
+
     }
 
 
@@ -72,7 +83,7 @@ public class GameManager : MonoBehaviour
     public void UpdateBlueScore()
     {
         blueCollected += 1;
-        blueScore.text = blueCollected + " Blue Shrooms collected";
+        //blueScore.text = blueCollected + " Blue Shrooms collected";
     }
     public void Explode()
     {
