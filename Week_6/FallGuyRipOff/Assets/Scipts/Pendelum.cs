@@ -16,6 +16,10 @@ public class Pendelum : MonoBehaviour
     {
         start = PendelumRotation(angle);
         end = PendelumRotation(-angle);
+
+        Rigidbody rb;
+        CharacterController c;
+        c.Move()
     }
 
     // Update is called once per frame
