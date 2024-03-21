@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 171599596}
   - component: {fileID: 171599595}
   - component: {fileID: 171599594}
-  - component: {fileID: 171599600}
   m_Layer: 0
   m_Name: PatrollerEnemy
   m_TagString: Dead
@@ -471,19 +470,6 @@ Transform:
   m_Father: {fileID: 1221695541}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &171599600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171599593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7caa4010d6261b34399f0dff836a51ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiMove: {fileID: 171599594}
 --- !u!1 &185188752
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +601,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37160
+  m_Name: pb_Mesh24438
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2552,11 +2538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 674739964952300132, guid: b9fabb6bcf7b48b4aaa7ae58e5d7027d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017025336
+      value: -0.000000017025329
       objectReference: {fileID: 0}
     - target: {fileID: 674739964952300132, guid: b9fabb6bcf7b48b4aaa7ae58e5d7027d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002489497
+      value: -0.0000000024894957
       objectReference: {fileID: 0}
     - target: {fileID: 674739965000459699, guid: b9fabb6bcf7b48b4aaa7ae58e5d7027d, type: 3}
       propertyPath: m_Name
@@ -3106,11 +3092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2222339865951266843, guid: b5d078a6aac6519438c06fd3c1961b4a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000034050668
+      value: -0.000000034050665
       objectReference: {fileID: 0}
     - target: {fileID: 2222339865951266843, guid: b5d078a6aac6519438c06fd3c1961b4a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000049789923
+      value: -0.0000000049789914
       objectReference: {fileID: 0}
     - target: {fileID: 2222339865951266843, guid: b5d078a6aac6519438c06fd3c1961b4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3444,7 +3430,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36994
+  m_Name: pb_Mesh24260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3863,7 +3849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406423962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.3, y: -9.7563, z: 23.7}
+  m_LocalPosition: {x: -21.25, y: -9.7563, z: 28.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3936,7 +3922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37032
+  m_Name: pb_Mesh24308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4107,10 +4093,9 @@ GameObject:
   - component: {fileID: 1576970429}
   - component: {fileID: 1576970428}
   - component: {fileID: 1576970427}
-  - component: {fileID: 1576970426}
-  - component: {fileID: 1576970431}
+  - component: {fileID: 1576970432}
   m_Layer: 0
-  m_Name: PatrollerEnemy3
+  m_Name: Chaser
   m_TagString: Dead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4132,22 +4117,6 @@ Transform:
   m_Father: {fileID: 1221695541}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 88.038, z: 0}
---- !u!114 &1576970426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576970424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e0034a26e35fb458f7a1766798f548, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 1076711062}
-  waypoints:
-  - {fileID: 1076711062}
-  - {fileID: 1406423963}
 --- !u!195 &1576970427
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4233,7 +4202,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576970424}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1576970431
+--- !u!114 &1576970432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4242,10 +4211,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1576970424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7caa4010d6261b34399f0dff836a51ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b82486fce580d0409de28c2d35399ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiMove: {fileID: 1576970426}
+  destinationPoint: {fileID: 1076711062}
+  waypoints:
+  - {fileID: 1076711062}
+  - {fileID: 1406423963}
 --- !u!4 &1587068634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: e44add80fdc0abe43b51f8e00f4a2630, type: 3}
@@ -4270,7 +4242,7 @@ GameObject:
   - component: {fileID: 1654795874}
   - component: {fileID: 1654795873}
   - component: {fileID: 1654795872}
-  - component: {fileID: 1654795871}
+  - component: {fileID: 1654795877}
   m_Layer: 0
   m_Name: Vision
   m_TagString: Untagged
@@ -4293,19 +4265,6 @@ Transform:
   m_Father: {fileID: 1576970425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 85.058, y: 180, z: 0}
---- !u!114 &1654795871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654795869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7caa4010d6261b34399f0dff836a51ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiMove: {fileID: 1576970426}
 --- !u!64 &1654795872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4755,6 +4714,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1654795877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654795869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4611a005733db0f46b18d6ebc7c3f5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaser: {fileID: 1576970432}
 --- !u!1001 &1693866904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4834,7 +4806,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37010
+  m_Name: pb_Mesh24276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5363,7 +5335,6 @@ GameObject:
   - component: {fileID: 2108137941}
   - component: {fileID: 2108137940}
   - component: {fileID: 2108137939}
-  - component: {fileID: 2108137944}
   m_Layer: 0
   m_Name: PatrollerEnemy2
   m_TagString: Dead
@@ -5488,19 +5459,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108137937}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2108137944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108137937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7caa4010d6261b34399f0dff836a51ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiMove: {fileID: 2108137939}
 --- !u!1 &2108544189
 GameObject:
   m_ObjectHideFlags: 0
